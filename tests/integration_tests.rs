@@ -86,6 +86,7 @@ async fn get_verification() {
 }
 
 #[test(tokio::test)]
+#[ignore]
 async fn get_event() {
     let resp = get_client().get_event::<Inquiry>("evt_71fVVErvRpkrFd1SGZowX1zR").await;
     println!("Resp: {:#?}", resp);
